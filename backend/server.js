@@ -4,6 +4,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const app = express();
 const port = process.env.PORT || 3000;
+const host = "13.201.188.2";
 app.use(express.json());
 app.use(cors());
 
@@ -37,7 +38,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-                url: `http://localhost:${port}`,
+                url: `http://${host}:${port}`,
             },
         ],
     },
@@ -93,6 +94,6 @@ app.use((req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running att http://localhost:${port}`);
-    console.log(`Swagger docs available at http://localhost:${port}/api-docs`);
+    console.log(`Server running att http://${host}:${port}`);
+    console.log(`Swagger docs available at http://${host}:${port}/api-docs`);
 });
