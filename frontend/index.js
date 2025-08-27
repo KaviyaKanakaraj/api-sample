@@ -1,4 +1,4 @@
-const host = "13.201.188.2";
+const host = "65.0.199.244";
 const port = "3000";
 async function getData() {
     const id = document.getElementById("dataId").value;

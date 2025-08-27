@@ -4,7 +4,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const app = express();
 const port = process.env.PORT || 3000;
-const host = "13.201.188.2";
+const host = "65.0.199.244";
 app.use(express.json());
 app.use(cors());
 
