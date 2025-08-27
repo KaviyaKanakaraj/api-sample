@@ -42,7 +42,7 @@ const swaggerOptions = {
             },
         ],
     },
-    apis: [__filename], // Points to this file for endpoint documentation
+    apis: [__filename],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
